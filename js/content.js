@@ -1,6 +1,6 @@
 function clickCard(ev) {
     localStorage.setItem("pageView", ev.currentTarget.id);
-    window.location.href = "./homepage/pages/contentS.html";
+    window.location.href = "./pages/contentS.html";
 }
 
 function fetchJSONData(s) {

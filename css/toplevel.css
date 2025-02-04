@@ -1,12 +1,15 @@
-body {
+html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #222;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .nav-container {
-    background-color: #ccc;
+    background-color: #11120d;
     padding: 10px 0;
     text-align: left;
     position: relative;
@@ -20,13 +23,13 @@ body {
 }
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: aliceblue;
     padding: 10px 20px;
     font-size: 18px;
     text-align: left;
 }
 .nav-links a:hover {
-    background-color: #bbb;
+    background-color: black;
     border-radius: 5px;
 }
 .menu-icon {
@@ -74,10 +77,13 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    flex: 1;
+    height: 2000px;
+    margin-bottom: 20px;
 }
 
 .card {
-    background-color: lightblue;
+    background-color: #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -86,4 +92,66 @@ body {
     max-width: 100%; /* Ensures responsiveness */
     text-align: center;
     transition: transform 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #11120d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    line-height: 1;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right a img {
+    width: 50px; /* Veličina ikona */
+    margin: 0 5px;
+    transition: transform 0.2s;
+}
+
+.footer-right a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-center a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-center a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-left, .footer-center, .footer-right {
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }

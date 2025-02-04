@@ -1,8 +1,7 @@
 .ctext {
     display: block;
     font-family: "Poppins", sans-serif; /* Use a modern font */
-    color: #333; /* Dark gray for readability */
-    background-color: #f8f8f8; /* Light gray background */
+    color: aliceblue; /* Dark gray for readability */
     line-height: 1.6;
     margin: 0;
     padding: 20px;
@@ -10,13 +9,13 @@
 
 h1 {
     font-size: 2.5rem;
-    color: #444;
+    color: #ddd;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
     font-size: 2rem;
-    color: #555;
+    color: #ddd;
     border-bottom: 2px solid #bbb;
     display: inline-block;
     padding-bottom: 5px;
@@ -24,13 +23,13 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    color: #666;
+    color: #ddd;
 }
 
 /* Paragraphs */
 p {
     font-size: 1.1rem;
-    color: #444;
+    color: #eee;
     margin-bottom: 15px;
     text-align: justify;
 }
@@ -45,14 +44,14 @@ p {
 
 /* Links */
 a {
-    color: #007bff;
+    color: aliceblue;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #ff5722;
+    color: #d94722;
     text-decoration: underline;
 }
 
@@ -85,4 +84,12 @@ blockquote {
 
 .btn:hover {
     background-color: #0056b3;
+}
+
+.card h3 {
+    color: #222;
+}
+
+.card p {
+    color: #111;
 }

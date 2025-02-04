@@ -2,21 +2,27 @@
     "content": [
         {
             "id": 1,
-            "title": "Dobrodošli na prvu stranicu!",
-            "subtitle": "Ovdje mozete saznati sve o nasoj udruzi",
-            "text": "Ovo je probni content"
+            "title": "Aktivnosti Udruge!",
+            "subtitle": "Saznajte gdje sve pratiti aktivnost udruge",
+            "text": "Pratite nas na društvenim mrežama: <a target='_blank' href='https://www.facebook.com/speedcubinghrvatska'>Facebook</a> i <a target='_blank' href='https://www.instagram.com/speedcubinghrvatska/'> Instagram</a><br>Kontaktirati nas možete putem e-mail adrese: <a target='_blank' href='mailto:speedcubing.hrvatska@gmail.com'>speedcubing.hrvatska@gmail.com</a>"
         },
         {
             "id": 2,
-            "title": "Ovo je druga testna kartica!",
-            "subtitle": "Ovdje nema nista puno :(",
-            "text": "Ovo je probni content 2"
+            "title": "Službene majice Udruge",
+            "subtitle": "Dugo očekivane majice napokon u prodaji",
+            "text": "Jer ste nas to od nas tražili - omogućili smo narudžbe Speedcubing Hrvatska Hoodica i T-shirt majica! 🤩<br> <br>U suradnji s profesionalcima iz Lumera, pokrenuli smo Speedcubing Hrvatska web-shop te od danas imamo u prodaji službene Hoodice i T-shirt majice u veličinama od dječjih (134-146) pa sve do unisex 5XL.<br>Pogledaj ponudu, počasti sebe i svoje na <a target='_blank' href='https://lumer-shop.eu/product-category/speedcubing-hrvatska/'>web store-u</a>"
         },
         {
             "id": 3,
-            "title": "Ovo je treca testna kartica!",
-            "subtitle": "Ovdje ima jos manje",
-            "text": "Ovo je probni content 3"
+            "title": "Sudjeluj u radu Udruge - Učlani se!",
+            "subtitle": "Vrijedno radimo na uspostavi modela članstva - uskoro krećemo!",
+            "text": "Sve informacije biti će objavljene pravovremeno na stranicama i drugim mrežama udruge."
+        },
+        {
+            "id": 4,
+            "title":"Podrži rad Udrudge, doniraj ovdje",
+            "subtitle": "Kroz sustav Stripe možete donirati i time podržati rad udruge",
+            "text":"<stripe-buy-button buy-button-id='buy_btn_1ObUUvDNQ8UQCJm39NyvmqQ0' publishable-key='pk_live_51J7js7DNQ8UQCJm3Ufs63s0NIqkBI8NkBZp8k3ZzVZDfuoh6nZNqwER4XlRZQXyaTlQqR6q0fPwARAtYHl8k92yP00knuf1GAc'></stripe-buy-button>"
         }
     ]
 }

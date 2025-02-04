@@ -9,22 +9,28 @@
     </head>
     <body>
         <div class="nav-container">
-            <img src="../images/Logo-vodoravno.svg" class="nav-img" onclick="gotoMain()">
+            <img
+                src="../images/Logo-vodoravno.svg"
+                class="nav-img"
+                onclick="gotoMain()"
+            />
             <span class="menu-icon" onclick="toggleMenu('b')">☰</span>
             <div class="nav-links" id="nav-links">
                 <a href="#about">About Us</a>
                 <a href="#badges">Badges</a>
                 <a href="#signup">Sign Up</a>
-                <a href="#merch">Merch</a>
+                <a
+                    href="https://lumer-shop.eu/product-category/speedcubing-hrvatska/"
+                    >Merch</a
+                >
             </div>
         </div>
-        <div class="content ctext" id="headDiv">
-        </div>
+        <div class="content ctext" id="headDiv"></div>
         <script src="../js/navbar.js"></script>
         <script src="../js/content.js"></script>
 
         <script>
-            fetchJSONDataGen('k');
+            fetchJSONDataGen("k");
         </script>
     </body>
 </html>

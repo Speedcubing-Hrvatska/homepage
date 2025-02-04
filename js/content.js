@@ -1,9 +1,4 @@
-function clickCard(ev) {
-    localStorage.setItem("pageView", ev.currentTarget.id);
-    window.location.href = "./pages/contentS.html";
-}
-
-function fetchJSONData(s) {
+function fetchJSONData() {
     fetch("./js/content.json")
         .then((response) => {
             if (!response.ok) {
@@ -22,7 +17,9 @@ function fetchJSONData(s) {
                 cardH.innerHTML = `<h3>${cardD.title}</h3> <p>${cardD.subtitle}</p>`;
                 cardH.classList.add("card");
                 cardH.id = cardD.id;
-                cardH.addEventListener("click", (ev) => clickCard(ev));
+                cardH.addEventListener("click", (ev) => {
+                    window.location.href = `./pages/contentS.html?id=${ev.currentTarget.id}`;
+                });
 
                 headDiv.appendChild(cardH);
             }
@@ -31,7 +28,9 @@ function fetchJSONData(s) {
 }
 
 function fetchJSONDataGen(s) {
-    let id = localStorage.getItem("pageView");
+    const urlParams = new URLSearchParams(window.location.search);
+    let id = urlParams.get('id');
+    console.log(id);
     if (id == null) {
         window.location.href = "../index.html";
         throw new Error("How'd you get here?");
@@ -50,7 +49,7 @@ function fetchJSONDataGen(s) {
             const siteD = data.content[id - 1];
             console.log(siteD);
 
-            headDiv.innerHTML = `<h1>${siteD.title}</h1><h3>${siteD.subtitle}</h3><p>${siteD.text}</p>`
+            headDiv.innerHTML = `<h1>${siteD.title}</h1><h3>${siteD.subtitle}</h3><p>${siteD.text}</p>`;
         })
         .catch((error) => console.error("Failed to fetch data:", error));
 }

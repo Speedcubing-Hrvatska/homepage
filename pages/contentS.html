@@ -4,17 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Speedcubing Hrvatska</title>
-        <link href="./css/toplevel.css" rel="stylesheet" />
+        <link href="../css/toplevel.css" rel="stylesheet" />
         <link href="../css/text.css" rel="stylesheet" />
     </head>
     <body>
         <div class="nav-container">
-            <img
-                src="./images/Logo-vodoravno.svg"
-                class="nav-img"
-                onclick="gotoMain()"
-            />
-            <span class="menu-icon" onclick="toggleMenu('s')">☰</span>
+            <img src="../images/Logo-vodoravno.svg" class="nav-img" onclick="gotoMain()">
+            <span class="menu-icon" onclick="toggleMenu('b')">☰</span>
             <div class="nav-links" id="nav-links">
                 <a href="#about">About Us</a>
                 <a href="#badges">Badges</a>
@@ -22,10 +18,13 @@
                 <a href="#merch">Merch</a>
             </div>
         </div>
-        <div class="content" id="headDiv"></div>
-        <script src="./js/navbar.js"></script>
-        <script src="./js/content.js"></script>
+        <div class="content ctext" id="headDiv">
+        </div>
+        <script src="../js/navbar.js"></script>
+        <script src="../js/content.js"></script>
 
-        <script>fetchJSONData('s');</script>
+        <script>
+            fetchJSONDataGen('k');
+        </script>
     </body>
 </html>

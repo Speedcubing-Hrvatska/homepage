@@ -4,6 +4,6 @@ function toggleMenu() {
 }
 
 function gotoMain(s) {
-    if (s == "s") window.location.href = "index.html";
+    if (s == "s") window.location.href = "./index.html";
     else window.location.href = "../index.html";
 }

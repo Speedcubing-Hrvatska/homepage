@@ -20,7 +20,7 @@
         },
         {
             "id": 4,
-            "title":"Podrži rad Udrudge, doniraj ovdje",
+            "title":"Podrži rad Udruge, doniraj ovdje",
             "subtitle": "Kroz sustav Stripe možete donirati i time podržati rad udruge",
             "text":"<stripe-buy-button buy-button-id='buy_btn_1ObUUvDNQ8UQCJm39NyvmqQ0' publishable-key='pk_live_51J7js7DNQ8UQCJm3Ufs63s0NIqkBI8NkBZp8k3ZzVZDfuoh6nZNqwER4XlRZQXyaTlQqR6q0fPwARAtYHl8k92yP00knuf1GAc'></stripe-buy-button>"
         }

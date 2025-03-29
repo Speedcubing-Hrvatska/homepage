@@ -82,7 +82,7 @@ body {
     gap: 20px;
     justify-content: center;
     flex: 1;
-    height: 2000px;
+    height: fit-content;
     margin-bottom: 20px;
 }
 
@@ -185,4 +185,26 @@ footer {
 }
 .big-link:hover {
     color: aliceblue;
+}
+
+.badge-container {
+    padding-bottom:5em;
+}
+
+.badge-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.badge-item {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-right: 3em;
+    padding-bottom: 2em;
+}
+
+.badge-item>img {
+    max-width: 200px;
 }

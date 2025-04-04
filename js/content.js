@@ -7,11 +7,11 @@ function fetchJSONData() {
             return response.json();
         })
         .then((data) => {
-            console.log(data);
+            //console.log(data);
             const headDiv = document.getElementById("headDiv");
             for (let i = 0; i < data.content.length; i++) {
                 let cardD = data.content[i];
-                console.log(cardD);
+                //console.log(cardD);
 
                 let cardH = document.createElement("div");
                 cardH.innerHTML = `<h3>${cardD.title}</h3> <p>${cardD.subtitle}</p>`;

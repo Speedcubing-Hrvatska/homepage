@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="hr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Sve vijesti udruge Speedcubing Hrvatska s filtriranjem po mjestu i datumu."
+		/>
+		<title>Vijesti | Speedcubing Hrvatska</title>
+		<link href="../../css/toplevel.css" rel="stylesheet" />
+		<link href="../../css/text.css" rel="stylesheet" />
+		<link rel="icon" href="../../images/Logo-kvadrat.svg" />
+	</head>
+	<body>
+		<a class="skip-link" href="#main">Preskoči na sadržaj</a>
+
+		<header class="site-header">
+			<nav class="site-nav container" aria-label="Primarna navigacija">
+				<a
+					class="brand"
+					href="../../index.html"
+					aria-label="Speedcubing Hrvatska početna"
+				>
+					<img
+						src="../../images/logo-bijeli.jpg"
+						class="brand-logo"
+						alt="Speedcubing Hrvatska"
+					/>
+				</a>
+				<button
+					class="nav-toggle"
+					type="button"
+					aria-label="Otvori navigaciju"
+					aria-expanded="false"
+					aria-controls="primary-navigation"
+					data-nav-toggle
+				>
+					<span class="nav-toggle-bars" aria-hidden="true">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</button>
+				<div class="nav-links" id="primary-navigation" data-nav-links>
+					<a href="./" aria-current="page">Vijesti</a>
+					<a href="../badges.html">Bedževi</a>
+					<a
+						href="https://lumer-shop.eu/product-category/speedcubing-hrvatska/"
+						>Merch</a
+					>
+					<a href="../dokumenti.html">Službeni dokumenti</a>
+				</div>
+			</nav>
+		</header>
+
+		<main id="main">
+			<section class="page-hero">
+				<div class="container">
+					<p class="eyebrow">Vijesti</p>
+					<h1>Arhiva vijesti</h1>
+					<p>
+						Sve vijesti udruge na jednom mjestu. Filtriraj ih po
+						mjestu, datumu ili tekstu.
+					</p>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container">
+					<form
+						class="news-controls"
+						id="newsFilters"
+						aria-label="Filtri vijesti"
+					>
+						<label>
+							Pretraga
+							<input
+								id="newsSearch"
+								type="search"
+								placeholder="Naslov, opis ili sadržaj"
+							/>
+						</label>
+						<label>
+							Mjesto
+							<select id="placeFilter">
+								<option value="">Sva mjesta</option>
+							</select>
+						</label>
+						<label>
+							Od datuma
+							<input id="dateFromFilter" type="date" />
+						</label>
+						<label>
+							Do datuma
+							<input id="dateToFilter" type="date" />
+						</label>
+						<label>
+							Sortiranje
+							<select id="sortFilter">
+								<option value="date-desc">
+									Najnovije prvo
+								</option>
+								<option value="date-asc">
+									Najstarije prvo
+								</option>
+								<option value="place-asc">Mjesto A-Z</option>
+								<option value="title-asc">Naslov A-Z</option>
+							</select>
+						</label>
+						<button class="button button-secondary" type="reset">
+							Poništi
+						</button>
+					</form>
+
+					<p
+						class="archive-count"
+						id="newsArchiveCount"
+						aria-live="polite"
+					></p>
+
+					<div
+						class="article-grid archive-grid"
+						id="newsArchiveGrid"
+						aria-live="polite"
+					>
+						<div class="skeleton-card" aria-hidden="true"></div>
+						<div class="skeleton-card" aria-hidden="true"></div>
+						<div class="skeleton-card" aria-hidden="true"></div>
+						<div class="skeleton-card" aria-hidden="true"></div>
+						<div class="skeleton-card" aria-hidden="true"></div>
+						<div class="skeleton-card" aria-hidden="true"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-grid">
+				<div class="footer-meta">
+					<p><strong>Udruga Speedcubing Hrvatska</strong></p>
+					<p>Ljubijska 42B, 10000 Zagreb, Hrvatska</p>
+					<p>OIB: 43786344473</p>
+				</div>
+				<a
+					class="footer-contact"
+					href="mailto:info@speedcubinghrvatska.hr"
+				>
+					info@speedcubinghrvatska.hr
+				</a>
+				<div class="social-links" aria-label="Društvene mreže">
+					<a
+						href="https://www.facebook.com/speedcubinghrvatska"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Facebook
+					</a>
+					<a
+						href="https://www.instagram.com/speedcubinghrvatska"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Instagram
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="../../js/navbar.js"></script>
+		<script src="../../js/content_v2.js"></script>
+		<script>
+			initNewsArchive();
+		</script>
+	</body>
+</html>

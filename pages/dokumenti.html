@@ -1,101 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Speedcubing Hrvatska</title>
-        <link href="../css/toplevel.css" rel="stylesheet" />
-        <link href="../css/text.css" rel="stylesheet" />
-        <link rel="icon" href="../images/Logo-kvadrat.svg" />
-    </head>
-    <body>
-        <div class="nav-container">
-            <img
-                src="../images/logo-bijeli.jpg"
-                class="nav-img"
-                onclick="gotoMain()"
-            />
-            <span class="menu-icon" onclick="toggleMenu('b')">☰</span>
-            <div class="nav-links" id="nav-links">
-                <!--<a href="#about">About Us</a>
-                <a href="#signup">Sign Up</a>-->
-                <a href="./badges.html">Bedževi</a>
-                <a
-                    href="https://lumer-shop.eu/product-category/speedcubing-hrvatska/"
-                    >Merch</a
-                >
-                <a href="./dokumenti.html">Službeni dokumenti</a>
-            </div>
-        </div>
-        <div class="content ctext" id="headDiv">
-            <div class="file-distro">
-                <a
-                    class="file-distro"
-                    href="./content/docs/OPĆI UVJETI ČLANSTVA I OSTVARIVANJA ČLANSKIH POGODNOSTI.pdf"
-                    ><img
-                        class="pdf-icon"
-                        src="https://img.icons8.com/dusk/64/pdf.png"
-                        alt="pdf"
-                    />Opći uvjeti članstva i ostvarivanja članskih pogodnosti</a
-                >
-            </div>
-            <div class="file-distro">
-                <a
-                    href="./content/docs/Statut Udruge Speedcubing Hrvatska.pdf"
-                    ><img
-                        class="pdf-icon"
-                        src="https://img.icons8.com/dusk/64/pdf.png"
-                        alt="pdf"
-                    />Statut udruge Speedcubing Hrvatska</a>
-            </div>
-            <div class="file-distro">
-                <a
-                    href="./content/docs/OPĆI UVJETI SUSTAVA VREDNOVANJA POSTIGNUĆA ČLANOVA.pdf"
-                    ><img
-                        class="pdf-icon"
-                        src="https://img.icons8.com/dusk/64/pdf.png"
-                        alt="pdf"
-                    />Opći uvjeti sustava vrednovanja postignuća članova</a>
-            </div>
-        </div>
-        </div>
+<!doctype html>
+<html lang="hr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Službeni dokumenti udruge Speedcubing Hrvatska: statut, uvjeti članstva i sustav vrednovanja postignuća članova."
+		/>
+		<title>Službeni dokumenti | Speedcubing Hrvatska</title>
+		<link href="../css/toplevel.css" rel="stylesheet" />
+		<link href="../css/text.css" rel="stylesheet" />
+		<link rel="icon" href="../images/Logo-kvadrat.svg" />
+	</head>
+	<body>
+		<a class="skip-link" href="#main">Preskoči na sadržaj</a>
 
-        <footer>
-            <div class="footer-container">
-                <div class="footer-left">
-                    <p style="color: white">Udruga Speedcubing Hrvatska</p>
-                    <p style="color: white">Ljubijska 42B, 10000 Zagreb</p>
-                    <p style="color: white">Hrvatska</p>
-                    <p style="color: white">OIB: 43786344473</p>
-                </div>
-                <div class="footer-center">
-                    <a href="mailto:info@speedcubinghrvatska.hr"
-						>info@speedcubinghrvatska.hr</a
+		<header class="site-header">
+			<nav class="site-nav container" aria-label="Primarna navigacija">
+				<a
+					class="brand"
+					href="../index.html"
+					aria-label="Speedcubing Hrvatska početna"
+				>
+					<img
+						src="../images/logo-bijeli.jpg"
+						class="brand-logo"
+						alt="Speedcubing Hrvatska"
+					/>
+				</a>
+				<button
+					class="nav-toggle"
+					type="button"
+					aria-label="Otvori navigaciju"
+					aria-expanded="false"
+					aria-controls="primary-navigation"
+					data-nav-toggle
+				>
+					<span class="nav-toggle-bars" aria-hidden="true">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</button>
+				<div class="nav-links" id="primary-navigation" data-nav-links>
+					<a href="./vijesti/">Vijesti</a>
+					<a href="./badges.html">Bedževi</a>
+					<a
+						href="https://lumer-shop.eu/product-category/speedcubing-hrvatska/"
+						>Merch</a
 					>
-                </div>
-                <div class="footer-right">
-                    <a
-                        href="https://www.facebook.com/speedcubinghrvatska"
-                        target="_blank"
-                    >
-                        <img
-                            src="https://img.icons8.com/color/240/facebook.png"
-                            alt="Facebook"
-                        />
-                    </a>
-                    <a
-                        href="https://www.instagram.com/speedcubinghrvatska"
-                        target="_blank"
-                    >
-                        <img
-                            src="https://img.icons8.com/color/240/instagram-new--v1.png"
-                            alt="Instagram"
-                        />
-                    </a>
-                </div>
-            </div>
-        </footer>
+					<a href="./dokumenti.html" aria-current="page"
+						>Službeni dokumenti</a
+					>
+				</div>
+			</nav>
+		</header>
 
-        <script src="../js/navbar.js"></script>
-    </body>
+		<main id="main">
+			<section class="page-hero">
+				<div class="container">
+					<p class="eyebrow">Transparentnost</p>
+					<h1>Službeni dokumenti</h1>
+					<p>
+						Statut, uvjeti članstva i pravila sustava vrednovanja
+						dostupni su kao PDF dokumenti.
+					</p>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="container documents-grid">
+					<a
+						class="document-card"
+						href="./content/docs/OPĆI UVJETI ČLANSTVA I OSTVARIVANJA ČLANSKIH POGODNOSTI.pdf"
+					>
+						<span class="document-icon" aria-hidden="true"
+							>PDF</span
+						>
+						<span>
+							<span class="document-type">Članstvo</span>
+							<h3>
+								Opći uvjeti članstva i ostvarivanja članskih
+								pogodnosti
+							</h3>
+							<p>
+								Pravila članstva, pogodnosti i obveze članova
+								udruge.
+							</p>
+						</span>
+					</a>
+					<a
+						class="document-card"
+						href="./content/docs/Statut Udruge Speedcubing Hrvatska.pdf"
+					>
+						<span class="document-icon" aria-hidden="true"
+							>PDF</span
+						>
+						<span>
+							<span class="document-type">Statut</span>
+							<h3>Statut udruge Speedcubing Hrvatska</h3>
+							<p>
+								Temeljni dokument koji definira rad i ustroj
+								udruge.
+							</p>
+						</span>
+					</a>
+					<a
+						class="document-card"
+						href="./content/docs/OPĆI UVJETI SUSTAVA VREDNOVANJA POSTIGNUĆA ČLANOVA.pdf"
+					>
+						<span class="document-icon" aria-hidden="true"
+							>PDF</span
+						>
+						<span>
+							<span class="document-type">Bedževi</span>
+							<h3>
+								Opći uvjeti sustava vrednovanja postignuća
+								članova
+							</h3>
+							<p>
+								Kriteriji za postignuća, razine i vrednovanje
+								članova.
+							</p>
+						</span>
+					</a>
+					<a
+						class="document-card"
+						href="./content/docs/Speedcubing bedzevi.pdf"
+					>
+						<span class="document-icon" aria-hidden="true"
+							>PDF</span
+						>
+						<span>
+							<span class="document-type">Pregled</span>
+							<h3>Speedcubing bedževi</h3>
+							<p>
+								Sažeti vizualni pregled bedževa dostupnih
+								članovima.
+							</p>
+						</span>
+					</a>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-grid">
+				<div class="footer-meta">
+					<p><strong>Udruga Speedcubing Hrvatska</strong></p>
+					<p>Ljubijska 42B, 10000 Zagreb, Hrvatska</p>
+					<p>OIB: 43786344473</p>
+				</div>
+				<a
+					class="footer-contact"
+					href="mailto:info@speedcubinghrvatska.hr"
+				>
+					info@speedcubinghrvatska.hr
+				</a>
+				<div class="social-links" aria-label="Društvene mreže">
+					<a
+						href="https://www.facebook.com/speedcubinghrvatska"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Facebook
+					</a>
+					<a
+						href="https://www.instagram.com/speedcubinghrvatska"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Instagram
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="../js/navbar.js"></script>
+	</body>
 </html>

@@ -1,96 +1,31 @@
 .ctext {
-    display: block;
-    font-family: "Poppins", sans-serif; /* Use a modern font */
-    color: aliceblue; /* Dark gray for readability */
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
+	color: var(--text);
 }
 
-h1 {
-    font-size: 2.5rem;
-    color: #ddd;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+.ctext p,
+.ctext li {
+	color: var(--text-muted);
 }
 
-h2 {
-    font-size: 2rem;
-    color: #ddd;
-    border-bottom: 2px solid #bbb;
-    display: inline-block;
-    padding-bottom: 5px;
+.ctext a {
+	color: var(--accent-warm);
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
 }
 
-h3 {
-    font-size: 1.5rem;
-    color: #ddd;
+.big-link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 2.85rem;
+	border-radius: var(--radius);
+	background: var(--accent-warm);
+	color: var(--text-dark) !important;
+	font-weight: 850;
+	padding: 0.72rem 1rem;
+	text-decoration: none !important;
 }
 
-/* Paragraphs */
-p {
-    font-size: 1.1rem;
-    color: #eee;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-/* Highlighted text */
-.highlight {
-    background-color: #ffeb3b;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-/* Links */
-a {
-    color: aliceblue;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #d94722;
-    text-decoration: underline;
-}
-
-/* Quote block */
-blockquote {
-    font-style: italic;
-    border-left: 5px solid #007bff;
-    padding-left: 15px;
-    margin: 10px 0;
-    color: #555;
-}
-
-/* Small text */
-.small-text {
-    font-size: 0.9rem;
-    color: #777;
-}
-
-/* Buttons (if needed) */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-.card h3 {
-    color: #222;
-}
-
-.card p {
-    color: #111;
-    text-align: left;
+.big-link:hover {
+	color: var(--text-dark) !important;
 }

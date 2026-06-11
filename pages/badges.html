@@ -1,210 +1,372 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="hr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Speedcubing Hrvatska</title>
+		<meta
+			name="description"
+			content="Pregled bedževa koje članovi Speedcubing Hrvatska mogu osvojiti kroz natjecanja, rezultate, organizaciju i doprinos udruzi."
+		/>
+		<title>Bedževi | Speedcubing Hrvatska</title>
 		<link href="../css/toplevel.css" rel="stylesheet" />
 		<link href="../css/text.css" rel="stylesheet" />
 		<link rel="icon" href="../images/Logo-kvadrat.svg" />
 	</head>
 	<body>
-		<div class="nav-container">
-			<img
-				src="../images/logo-bijeli.jpg"
-				class="nav-img"
-				onclick="gotoMain()"
-			/>
-			<span class="menu-icon" onclick="toggleMenu('b')">☰</span>
-			<div class="nav-links" id="nav-links">
-				<!--<a href="#about">About Us</a>
-                <a href="#signup">Sign Up</a>-->
-				<a href="./badges.html">Bedževi</a>
+		<a class="skip-link" href="#main">Preskoči na sadržaj</a>
+
+		<header class="site-header">
+			<nav class="site-nav container" aria-label="Primarna navigacija">
 				<a
-					href="https://lumer-shop.eu/product-category/speedcubing-hrvatska/"
-					>Merch</a
+					class="brand"
+					href="../index.html"
+					aria-label="Speedcubing Hrvatska početna"
 				>
-				<a href="./dokumenti.html">Službeni dokumenti</a>
-			</div>
-		</div>
-
-		<div class="content ctext">
-			<h1>Bedževi</h1>
-			<p>
-				Ovdje je kratki prikaz svih bedževa koje možete osvojiti kroz
-				razne aktivnosti!
-				<br /><br />
-				Sve detaljnije informacije o kriterijima potražite u
-				<a href="./dokumenti.html">općim uvjetima</a>
-			</p>
-			<div class="badge-container">
-				<h2>Jednostavni</h2>
-				<div class="badge-row">
-					<div class="badge-item">
-						<img src="../images/badge-images/j001.png" />
-						<b>J001</b>
-						Nastupio na WCA natjecanju
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/j002.png" />
-						<b>J002</b>
-						Prosječan rezultat ispod 20 sekundi na 3x3
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/j003.png" />
-						<b>J003</b>
-						Prošao u drugu rundu glavne discipline
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/j004.png" />
-						<b>J004</b>
-						Sva natjecanja u jednoj godini
-					</div>
-				</div>
-
-				<h2>Teški</h2>
-				<div class="badge-row">
-					<div class="badge-item">
-						<img src="../images/badge-images/t001.png" />
-						<b>T001</b>
-						NR10
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/t002.png" />
-						<b>T002</b>
-						Prosječan rezultat ispod 13 sekundi na 3x3
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/t003.png" />
-						<b>T003</b>
-						Postolje
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/t004.png" />
-						<b>T004</b>
-						Championship postolje
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/t005.png" />
-						<b>T005</b>
-						3x3 naslijepo
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/t006.png" />
-						<b>T006</b>
-						Rezultat na svim WCA slagalicama
-					</div>
-				</div>
-
-				<h2>Legendarni</h2>
-				<div class="badge-row">
-					<div class="badge-item">
-						<img src="../images/badge-images/l001.png" />
-						<b>L001</b>
-						NR
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/l002.png" />
-						<b>L002</b>
-						Prosječan rezultat ispod 10 sekundi na 3x3
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/l003.png" />
-						<b>L003</b>
-						Predstavljao Hrvatsku na svjetskom / kontinentalnom
-						natjecanju
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/l004.png" />
-						<b>L004</b>
-						Nagrada za isticanje i trud
-					</div>
-				</div>
-
-				<h2>Master</h2>
-				<div class="badge-row">
-					<div class="badge-item">
-						<img src="../images/badge-images/m001.png" />
-						<b>M001</b>
-						Prosjek na svim WCA eventima
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/m002.png" />
-						<b>M002</b>
-						5+ NR
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/m003.png" />
-						<b>M003</b>
-						Počasni član
-					</div>
-				</div>
-
-				<h2>Iskustvo</h2>
-				<div class="badge-row">
-					<div class="badge-item">
-						<img src="../images/badge-images/i001.png" />
-						<b>I001</b>
-						5 natjecanja
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/i002.png" />
-						<b>I002</b>
-						25 natjecanja
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/i003.png" />
-						<b>I003</b>
-						50 natjecanja
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/i004.png" />
-						<b>I004</b>
-						99 natjecanja
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/i005.png" />
-						<b>I005</b>
-						WCA delegat
-					</div>
-					<div class="badge-item">
-						<img src="../images/badge-images/i006.png" />
-						<b>I006</b>
-						WCA organizator
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<footer>
-			<div class="footer-container">
-				<div class="footer-left">
-					<p style="color: white">Udruga Speedcubing Hrvatska</p>
-					<p style="color: white">Ljubijska 42B, 10000 Zagreb</p>
-					<p style="color: white">Hrvatska</p>
-					<p style="color: white">OIB: 43786344473</p>
-				</div>
-				<a href="mailto:info@speedcubinghrvatska.hr"
-					>info@speedcubinghrvatska.hr</a
+					<img
+						src="../images/logo-bijeli.jpg"
+						class="brand-logo"
+						alt="Speedcubing Hrvatska"
+					/>
+				</a>
+				<button
+					class="nav-toggle"
+					type="button"
+					aria-label="Otvori navigaciju"
+					aria-expanded="false"
+					aria-controls="primary-navigation"
+					data-nav-toggle
 				>
-				<div class="footer-right">
+					<span class="nav-toggle-bars" aria-hidden="true">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</button>
+				<div class="nav-links" id="primary-navigation" data-nav-links>
+					<a href="./vijesti/">Vijesti</a>
+					<a href="./badges.html" aria-current="page">Bedževi</a>
+					<a
+						href="https://lumer-shop.eu/product-category/speedcubing-hrvatska/"
+						>Merch</a
+					>
+					<a href="./dokumenti.html">Službeni dokumenti</a>
+				</div>
+			</nav>
+		</header>
+
+		<main id="main">
+			<section class="page-hero">
+				<div class="container">
+					<p class="eyebrow">Program postignuća</p>
+					<h1>Bedževi</h1>
+					<p>
+						Pregled bedževa koje članovi mogu osvojiti kroz
+						rezultate, nastupe, organizaciju, delegiranje i doprinos
+						radu udruge. Detaljni kriteriji nalaze se u službenim
+						uvjetima.
+					</p>
+					<div class="page-hero-actions">
+						<a
+							class="button button-primary"
+							href="./dokumenti.html"
+						>
+							Opći uvjeti
+						</a>
+						<a
+							class="button button-secondary"
+							href="./content/docs/Speedcubing bedzevi.pdf"
+						>
+							PDF pregled
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="badge-level">
+				<div class="container">
+					<div class="badge-level-header">
+						<div>
+							<p class="eyebrow">Razina</p>
+							<h2>Jednostavni</h2>
+						</div>
+						<span class="badge-count">4 bedža</span>
+					</div>
+					<div class="badge-grid">
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/j001.png"
+								alt="Bedž J001"
+							/>
+							<span class="badge-code">J001</span>
+							<h3>Nastupio na WCA natjecanju</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/j002.png"
+								alt="Bedž J002"
+							/>
+							<span class="badge-code">J002</span>
+							<h3>Prosječan rezultat ispod 20 sekundi na 3x3</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/j003.png"
+								alt="Bedž J003"
+							/>
+							<span class="badge-code">J003</span>
+							<h3>Prošao u drugu rundu glavne discipline</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/j004.png"
+								alt="Bedž J004"
+							/>
+							<span class="badge-code">J004</span>
+							<h3>Sva natjecanja u jednoj godini</h3>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="badge-level">
+				<div class="container">
+					<div class="badge-level-header">
+						<div>
+							<p class="eyebrow">Razina</p>
+							<h2>Teški</h2>
+						</div>
+						<span class="badge-count">6 bedževa</span>
+					</div>
+					<div class="badge-grid">
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/t001.png"
+								alt="Bedž T001"
+							/>
+							<span class="badge-code">T001</span>
+							<h3>NR10</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/t002.png"
+								alt="Bedž T002"
+							/>
+							<span class="badge-code">T002</span>
+							<h3>Prosječan rezultat ispod 13 sekundi na 3x3</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/t003.png"
+								alt="Bedž T003"
+							/>
+							<span class="badge-code">T003</span>
+							<h3>Postolje</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/t004.png"
+								alt="Bedž T004"
+							/>
+							<span class="badge-code">T004</span>
+							<h3>Championship postolje</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/t005.png"
+								alt="Bedž T005"
+							/>
+							<span class="badge-code">T005</span>
+							<h3>3x3 naslijepo</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/t006.png"
+								alt="Bedž T006"
+							/>
+							<span class="badge-code">T006</span>
+							<h3>Rezultat na svim WCA slagalicama</h3>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="badge-level">
+				<div class="container">
+					<div class="badge-level-header">
+						<div>
+							<p class="eyebrow">Razina</p>
+							<h2>Legendarni</h2>
+						</div>
+						<span class="badge-count">4 bedža</span>
+					</div>
+					<div class="badge-grid">
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/l001.png"
+								alt="Bedž L001"
+							/>
+							<span class="badge-code">L001</span>
+							<h3>NR</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/l002.png"
+								alt="Bedž L002"
+							/>
+							<span class="badge-code">L002</span>
+							<h3>Prosječan rezultat ispod 10 sekundi na 3x3</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/l003.png"
+								alt="Bedž L003"
+							/>
+							<span class="badge-code">L003</span>
+							<h3>
+								Predstavljao Hrvatsku na svjetskom ili
+								kontinentalnom natjecanju
+							</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/l004.png"
+								alt="Bedž L004"
+							/>
+							<span class="badge-code">L004</span>
+							<h3>Nagrada za isticanje i trud</h3>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="badge-level">
+				<div class="container">
+					<div class="badge-level-header">
+						<div>
+							<p class="eyebrow">Razina</p>
+							<h2>Master</h2>
+						</div>
+						<span class="badge-count">3 bedža</span>
+					</div>
+					<div class="badge-grid">
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/m001.png"
+								alt="Bedž M001"
+							/>
+							<span class="badge-code">M001</span>
+							<h3>Prosjek na svim WCA eventima</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/m002.png"
+								alt="Bedž M002"
+							/>
+							<span class="badge-code">M002</span>
+							<h3>5+ NR</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/m003.png"
+								alt="Bedž M003"
+							/>
+							<span class="badge-code">M003</span>
+							<h3>Počasni član</h3>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="badge-level">
+				<div class="container">
+					<div class="badge-level-header">
+						<div>
+							<p class="eyebrow">Razina</p>
+							<h2>Iskustvo</h2>
+						</div>
+						<span class="badge-count">6 bedževa</span>
+					</div>
+					<div class="badge-grid">
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/i001.png"
+								alt="Bedž I001"
+							/>
+							<span class="badge-code">I001</span>
+							<h3>5 natjecanja</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/i002.png"
+								alt="Bedž I002"
+							/>
+							<span class="badge-code">I002</span>
+							<h3>25 natjecanja</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/i003.png"
+								alt="Bedž I003"
+							/>
+							<span class="badge-code">I003</span>
+							<h3>50 natjecanja</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/i004.png"
+								alt="Bedž I004"
+							/>
+							<span class="badge-code">I004</span>
+							<h3>99 natjecanja</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/i005.png"
+								alt="Bedž I005"
+							/>
+							<span class="badge-code">I005</span>
+							<h3>WCA delegat</h3>
+						</article>
+						<article class="badge-card">
+							<img
+								src="../images/badge-images/i006.png"
+								alt="Bedž I006"
+							/>
+							<span class="badge-code">I006</span>
+							<h3>WCA organizator</h3>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-grid">
+				<div class="footer-meta">
+					<p><strong>Udruga Speedcubing Hrvatska</strong></p>
+					<p>Ljubijska 42B, 10000 Zagreb, Hrvatska</p>
+					<p>OIB: 43786344473</p>
+				</div>
+				<a
+					class="footer-contact"
+					href="mailto:info@speedcubinghrvatska.hr"
+				>
+					info@speedcubinghrvatska.hr
+				</a>
+				<div class="social-links" aria-label="Društvene mreže">
 					<a
 						href="https://www.facebook.com/speedcubinghrvatska"
 						target="_blank"
+						rel="noreferrer"
 					>
-						<img
-							src="https://img.icons8.com/color/240/facebook.png"
-							alt="Facebook"
-						/>
+						Facebook
 					</a>
 					<a
 						href="https://www.instagram.com/speedcubinghrvatska"
 						target="_blank"
+						rel="noreferrer"
 					>
-						<img
-							src="https://img.icons8.com/color/240/instagram-new--v1.png"
-							alt="Instagram"
-						/>
+						Instagram
 					</a>
 				</div>
 			</div>
